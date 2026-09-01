@@ -3,15 +3,26 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<title>
-ServiceNow Docs by rohit7n
-</title>
+    <meta
+        name="description"
+        content="ServiceNow Developer Documentation Hub by rohit7n. A structured collection of ServiceNow documentation, developer references, technical articles and reusable code resources."
+    >
 
-<link rel="stylesheet" href="style.css">
+    <meta
+        name="theme-color"
+        content="#0b1117"
+    >
+
+    <title>
+        ServiceNow Docs by rohit7n
+    </title>
 
 </head>
 
@@ -19,611 +30,406 @@ ServiceNow Docs by rohit7n
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- ==========================================
+     NAVIGATION
+     ========================================== -->
 
-<nav>
+<header>
 
-    <div class="logo">
-        <span>SN</span> Docs by rohit7n
-    </div>
+    <nav
+        class="navbar"
+        aria-label="Main navigation"
+    >
 
+        <div class="logo">
 
-    <div class="nav-links">
+            <span class="logo-mark">
+                SN
+            </span>
 
-        <a href="#materials">
-            Resources
-        </a>
-
-        <a href="#about">
-            About
-        </a>
-
-        <a href="#legal">
-            Legal
-        </a>
-
-        <a href="#contact">
-            Contact
-        </a>
-
-    </div>
-
-</nav>
-
-
-
-
-
-<!-- HERO SECTION -->
-
-<section class="hero">
-
-
-    <div class="hero-content">
-
-
-        <h1>
-            ServiceNow Developer Documentation Hub
-        </h1>
-
-
-        <p>
-
-            A structured technical repository containing
-            ServiceNow documentation, developer references,
-            architecture insights, technical articles and
-            reusable code resources.
-
-        </p>
-
-
-
-        <div class="search-box">
-
-            <input 
-            type="search"
-            id="searchInput"
-            placeholder="Search technical resources..."
-            >
+            <span class="logo-text">
+                Docs by rohit7n
+            </span>
 
         </div>
 
 
-    </div>
+        <div class="nav-links">
+
+            <a href="#materials">
+                Resources
+            </a>
 
 
-</section>
+            <a href="#about">
+                About
+            </a>
 
 
-<div style="
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  box-sizing: border-box;
-">
+            <a href="#legal">
+                Legal
+            </a>
 
-  <a
-    href="https://mastodon.social/@servicenow_developer"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display: block;
-      width: 100%;
-      max-width: 500px;
-      padding: 22px 24px;
-      box-sizing: border-box;
-      text-decoration: none;
-      color: #ffffff;
-      background: linear-gradient(145deg, #18232d, #101820);
-      border: 1px solid #2b3a46;
-      border-radius: 12px;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.30);
-      transition: all 0.2s ease;
-    "
-    onmouseover="
-      this.style.borderColor='#4cc9b0';
-      this.style.transform='translateY(-2px)';
-      this.style.boxShadow='0 10px 28px rgba(0,0,0,0.4)';
-    "
-    onmouseout="
-      this.style.borderColor='#2b3a46';
-      this.style.transform='translateY(0)';
-      this.style.boxShadow='0 6px 20px rgba(0,0,0,0.30)';
-    "
-  >
+        </div>
 
-    <div style="
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: 0.1px;
-      color: #ffffff;
-    ">
-      Daily ServiceNow Insights via Self Learning
-    </div>
+    </nav>
 
-    <div style="
-      margin-top: 8px;
-      font-size: 12px;
-      color: #8fa0ad;
-    ">
-      Public • Click to explore
-    </div>
-
-  </a>
-
-</div>
+</header>
 
 
 
-<!-- RESOURCE LIBRARY -->
+
+<!-- ==========================================
+     MAIN CONTENT
+     ========================================== -->
+
+<main>
 
 
-<section id="materials" class="container">
+    <!-- ======================================
+         HERO SECTION
+         ====================================== -->
+
+    <section
+        class="hero"
+        aria-labelledby="hero-title"
+    >
+
+        <div class="hero-content">
+
+            <h1 id="hero-title">
+                ServiceNow Developer Documentation Hub
+            </h1>
 
 
-    <div class="section-title">
+            <p>
+                A structured technical repository containing
+                ServiceNow documentation, developer references,
+                architecture insights, technical articles and
+                reusable code resources.
+            </p>
 
-        <h2>
-            Developer Resources
+
+            <div class="search-box">
+
+                <label
+                    for="searchInput"
+                    class="visually-hidden"
+                >
+                    Search technical resources
+                </label>
+
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    name="search"
+                    placeholder="Search technical resources..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ======================================
+         DAILY INSIGHTS
+         ====================================== -->
+
+    <section
+        class="daily-insights"
+        aria-label="Daily ServiceNow Insights"
+    >
+
+        <a
+            href="https://mastodon.social/@servicenow_developer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="insights-card"
+        >
+
+            <div class="insights-title">
+                Daily ServiceNow Insights via Self Learning
+            </div>
+
+
+            <div class="insights-status">
+                Public
+            </div>
+
+        </a>
+
+    </section>
+
+
+
+
+    <!-- ======================================
+         RESOURCE LIBRARY
+         ====================================== -->
+
+    <section
+        id="materials"
+        class="container resources-section"
+        aria-labelledby="resources-title"
+    >
+
+        <div class="section-title">
+
+            <h2 id="resources-title">
+                Developer Resources
+            </h2>
+
+
+            <p>
+                Explore technical documentation and references
+            </p>
+
+        </div>
+
+
+
+
+        <div
+            class="grid"
+            id="materialGrid"
+        >
+
+
+            <!-- ==================================
+                 ALL RESOURCES CARD
+
+                 CURRENT STATUS:
+                 IN PROGRESS
+
+                 CURRENT BEHAVIOR:
+                 Non-clickable.
+
+                 FUTURE ACTIVATION:
+
+                 Change:
+
+                 data-status="in-progress"
+                 data-url=""
+
+                 To:
+
+                 data-status="active"
+                 data-url="resources/index.html"
+
+                 ================================== -->
+
+
+            <article
+                class="card resource-card in-progress"
+                data-resource="all-resources"
+                data-status="in-progress"
+                data-url=""
+                aria-disabled="true"
+            >
+
+                <div class="card-type">
+                    IN PROGRESS
+                </div>
+
+
+                <h3>
+                    All Resources
+                </h3>
+
+
+                <p>
+                    A centralized collection of ServiceNow developer
+                    documentation, technical references, technical
+                    articles, architecture insights and reusable
+                    code resources.
+                </p>
+
+
+                <div class="card-footer">
+
+                    <span>
+                        Coming Soon
+                    </span>
+
+
+                    <span class="resource-status">
+                        In Progress
+                    </span>
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ======================================
+         ABOUT
+         ====================================== -->
+
+    <section
+        id="about"
+        class="container info-section"
+        aria-labelledby="about-title"
+    >
+
+        <h2 id="about-title">
+            About This Platform
         </h2>
 
+
         <p>
-            Explore technical documentation and references
+            ServiceNow Docs by rohit7n is an independent technical
+            documentation portfolio focused on organizing and presenting
+            developer-focused information in a structured format.
         </p>
 
-    </div>
 
+        <p>
+            The platform represents personal research, technical
+            exploration and documentation efforts around ServiceNow
+            development and related technologies.
+        </p>
 
+    </section>
 
 
 
-    <div class="grid" id="materialGrid">
 
+    <!-- ======================================
+         LEGAL
+         ====================================== -->
 
+    <section
+        id="legal"
+        class="container info-section"
+        aria-labelledby="legal-title"
+    >
 
+        <h2 id="legal-title">
+            Information Disclaimer
+        </h2>
 
 
-        <!-- PDF -->
+        <p>
+            This platform provides technical information collected from
+            publicly available resources, official documentation,
+            community discussions and independent research.
+        </p>
 
-        <article 
-        class="card"
-        data-search="servicenow handbook pdf developer documentation">
 
+        <p>
+            We do not disclose, publish or represent any internal,
+            confidential, proprietary or restricted information belonging
+            to any organization.
+        </p>
 
-            <div class="card-type pdf">
-                PDF
-            </div>
 
 
-            <h3>
-                ServiceNow Developer Handbook
-            </h3>
 
+        <h2>
+            Terms &amp; Conditions
+        </h2>
 
-            <p>
 
-                A structured reference covering ServiceNow
-                development concepts, workflows and platform
-                capabilities.
+        <p>
+            The information available on this website is provided for
+            general reference purposes.
+        </p>
 
-            </p>
 
+        <p>
+            Technology changes continuously, therefore users should
+            verify critical information through official sources.
+        </p>
 
 
-            <div class="card-footer">
+        <p>
+            This website is an independent personal portfolio and is not
+            affiliated with, sponsored by or officially connected with
+            ServiceNow Inc. or any organization.
+        </p>
 
 
-                <span>
-                    Documentation
-                </span>
 
 
+        <h2>
+            Privacy Policy
+        </h2>
 
-                <button onclick="openFile('documents/handbook.pdf')">
 
-                    Open
+        <p>
+            User privacy is respected.
+        </p>
 
-                </button>
 
+        <p>
+            We do not sell, distribute or misuse personal information.
+            Any information voluntarily provided through email is used
+            only for communication purposes.
+        </p>
 
-            </div>
 
 
-        </article>
 
+        <h2>
+            Intellectual Property
+        </h2>
 
 
+        <p>
+            ServiceNow® and associated trademarks belong to ServiceNow Inc.
+        </p>
 
 
+        <p>
+            All third-party product names, logos and trademarks belong to
+            their respective owners.
+        </p>
 
+    </section>
 
 
+</main>
 
-        <!-- DOCX -->
 
 
-        <article 
-        class="card"
-        data-search="javascript servicenow docx scripting business rules glide api">
 
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
 
-            <div class="card-type docx">
-                DOCX
-            </div>
+<footer class="site-footer">
 
+    <p>
+        © 2026 rohit7n
+    </p>
 
-            <h3>
-                JavaScript For ServiceNow
-            </h3>
 
-
-            <p>
-
-                Technical reference covering server-side
-                scripting, client scripts, Business Rules
-                and Glide APIs.
-
-            </p>
-
-
-
-            <div class="card-footer">
-
-
-                <span>
-                    JavaScript
-                </span>
-
-
-
-                <button onclick="openFile('documents/javascript.docx')">
-
-                    Open
-
-                </button>
-
-
-            </div>
-
-
-        </article>
-
-
-
-
-
-
-
-
-
-        <!-- BLOG -->
-
-
-        <article 
-        class="card"
-        data-search="servicenow architecture blog application tables modules">
-
-
-            <div class="card-type blog">
-                BLOG
-            </div>
-
-
-            <h3>
-                ServiceNow Architecture
-            </h3>
-
-
-            <p>
-
-                Technical articles explaining platform
-                architecture, applications, tables and
-                development patterns.
-
-            </p>
-
-
-
-            <div class="card-footer">
-
-
-                <span>
-                    Architecture
-                </span>
-
-
-
-                <button onclick="openFile('blogs/index.html')">
-
-                    Open
-
-                </button>
-
-
-            </div>
-
-
-        </article>
-
-
-
-
-
-
-
-
-
-        <!-- CODE -->
-
-
-        <article 
-        class="card"
-        data-search="javascript code gliderecord servicenow snippets">
-
-
-            <div class="card-type code">
-                CODE
-            </div>
-
-
-            <h3>
-                GlideRecord Code Library
-            </h3>
-
-
-            <p>
-
-                Reusable ServiceNow JavaScript snippets
-                and implementation examples.
-
-            </p>
-
-
-
-            <div class="card-footer">
-
-
-                <span>
-                    Code Repository
-                </span>
-
-
-
-                <button onclick="openFile('code/gliderecord.js')">
-
-                    Open
-
-                </button>
-
-
-            </div>
-
-
-        </article>
-
-
-
-
-
-
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- ABOUT -->
-
-
-<section id="about" class="container info-section">
-
-
-<h2>
-About This Platform
-</h2>
-
-
-<p>
-
-ServiceNow Docs by rohit7n is an independent technical
-documentation portfolio focused on organizing and presenting
-developer-focused information in a structured format.
-
-</p>
-
-
-<p>
-
-The platform represents personal research, technical
-exploration and documentation efforts around ServiceNow
-development and related technologies.
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- LEGAL -->
-
-
-<section id="legal" class="container info-section">
-
-
-<h2>
-Information Disclaimer
-</h2>
-
-
-<p>
-
-This platform provides technical information collected from
-publicly available resources, official documentation,
-community discussions and independent research.
-
-</p>
-
-
-<p>
-
-We do not disclose, publish or represent any internal,
-confidential, proprietary or restricted information belonging
-to any organization.
-
-</p>
-
-
-
-
-
-
-<h2>
-Terms & Conditions
-</h2>
-
-
-<p>
-
-The information available on this website is provided for
-general reference purposes.
-
-Technology changes continuously, therefore users should
-verify critical information through official sources.
-
-</p>
-
-
-<p>
-
-This website is an independent personal portfolio and is not
-affiliated with, sponsored by or officially connected with
-ServiceNow Inc. or any organization.
-
-</p>
-
-
-
-
-
-
-<h2>
-Privacy Policy
-</h2>
-
-
-<p>
-
-User privacy is respected.
-
-We do not sell, distribute or misuse personal information.
-Any information voluntarily provided through email is used
-only for communication purposes.
-
-</p>
-
-
-
-
-
-
-
-<h2>
-Intellectual Property
-</h2>
-
-
-<p>
-
-ServiceNow® and associated trademarks belong to ServiceNow Inc.
-
-All third-party product names, logos and trademarks belong to
-their respective owners.
-
-</p>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- CONTACT -->
-
-
-<section id="contact" class="contact">
-
-
-<h2>
-Contact
-</h2>
-
-
-<p>
-For collaboration, feedback or queries:
-</p>
-
-
-<a href="mailto:rohitn267official@gmail.com">
-
-rohitn267official@gmail.com
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer>
-
-
-<p>
-© 2026 rohit7n
-</p>
-
-
-<p>
-Independent Developer Documentation Portfolio
-</p>
-
+    <p>
+        Independent Developer Documentation Portfolio
+    </p>
 
 </footer>
 
 
 
 
-
+<!-- ==========================================
+     JAVASCRIPT
+     ========================================== -->
 
 <script src="script.js"></script>
 
