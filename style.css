@@ -1330,3 +1330,38 @@ header {
     }
 
 }
+
+
+.insights-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.insights-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.insights-status {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.insights-button {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #0066ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.insights-button:hover {
+    background: #0052cc;
+}
