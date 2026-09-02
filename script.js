@@ -130,6 +130,36 @@ document
 
 
 /* =====================================
+   DAILY INSIGHTS BUTTON
+===================================== */
+
+const insightsButton =
+    document.querySelector(
+        ".insights-button"
+    );
+
+
+if (insightsButton) {
+
+    insightsButton.addEventListener(
+        "click",
+        function () {
+
+            window.open(
+                "https://mastodon.social/@servicenow_developer",
+                "_blank",
+                "noopener,noreferrer"
+            );
+
+        }
+    );
+
+}
+
+
+
+
+/* =====================================
    SEARCH FUNCTIONALITY
 ===================================== */
 
@@ -190,6 +220,8 @@ if (searchInput) {
     );
 
 }
+
+
 
 
 /* =====================================
