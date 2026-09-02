@@ -113,7 +113,6 @@ header {
 }
 
 .navbar {
-
     display: flex;
 
     align-items: center;
@@ -143,7 +142,6 @@ header {
 ===================================== */
 
 .logo {
-
     display: flex;
 
     align-items: center;
@@ -162,7 +160,6 @@ header {
 }
 
 .logo-mark {
-
     display: inline-flex;
 
     align-items: center;
@@ -204,7 +201,6 @@ header {
 ===================================== */
 
 .nav-links {
-
     display: flex;
 
     align-items: center;
@@ -213,7 +209,6 @@ header {
 }
 
 .nav-links a {
-
     position: relative;
 
     display: inline-flex;
@@ -238,7 +233,6 @@ header {
 }
 
 .nav-links a:hover {
-
     color: #dffcf9;
 
     background:
@@ -251,7 +245,6 @@ header {
 ===================================== */
 
 .hero {
-
     position: relative;
 
     padding:
@@ -262,7 +255,6 @@ header {
 }
 
 .hero::before {
-
     content: "";
 
     position: absolute;
@@ -287,7 +279,6 @@ header {
 }
 
 .hero-content {
-
     position: relative;
 
     z-index: 1;
@@ -300,7 +291,6 @@ header {
 }
 
 .hero h1 {
-
     max-width: 900px;
 
     margin: auto;
@@ -322,7 +312,6 @@ header {
 }
 
 .hero h1::after {
-
     content: "";
 
     display: block;
@@ -346,7 +335,6 @@ header {
 }
 
 .hero p {
-
     max-width: 760px;
 
     margin:
@@ -366,14 +354,12 @@ header {
 ===================================== */
 
 .search-box {
-
     width: 100%;
 
     margin-top: 38px;
 }
 
 .search-box input {
-
     width: min(520px, 100%);
 
     height: 52px;
@@ -415,7 +401,6 @@ header {
 }
 
 .search-box input:focus {
-
     border-color: #4bc8b8;
 
     background:
@@ -432,7 +417,6 @@ header {
 ===================================== */
 
 .daily-insights {
-
     width: 100%;
 
     display: flex;
@@ -445,58 +429,96 @@ header {
 }
 
 .insights-card {
+    position: relative;
 
-    display: block;
+    overflow: hidden;
 
     width: 100%;
 
     max-width: 520px;
 
     padding:
-        22px 25px;
+        24px 25px;
 
     text-align: center;
-
-    text-decoration: none;
-
-    color: #ffffff;
 
     background:
         linear-gradient(
             145deg,
-            #111f27,
-            #0a141a
+            rgba(15, 31, 39, 0.98),
+            rgba(6, 15, 21, 0.98)
         );
 
     border:
-        1px solid #263b43;
+        1px solid
+        rgba(0, 224, 255, 0.12);
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.25);
+        0 10px 35px
+        rgba(0, 0, 0, 0.28);
 
     transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.insights-card:hover {
 
+/* =====================================
+   INSIGHTS CARD TOP ACCENT
+===================================== */
+
+.insights-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #00e0ff,
+            #5865ff,
+            transparent
+        );
+
+    opacity: 0.75;
+}
+
+
+/* =====================================
+   INSIGHTS CARD HOVER
+===================================== */
+
+.insights-card:hover {
     transform:
         translateY(-3px);
 
     border-color:
-        rgba(75, 200, 184, 0.55);
+        rgba(0, 224, 255, 0.30);
 
     box-shadow:
-        0 14px 35px
-        rgba(0, 0, 0, 0.35);
+        0 15px 45px
+        rgba(0, 0, 0, 0.32),
+        0 0 30px
+        rgba(0, 224, 255, 0.06);
 }
 
-.insights-title {
 
+/* =====================================
+   INSIGHTS TITLE
+===================================== */
+
+.insights-title {
     color: #edfafa;
 
     font-size: 17px;
@@ -506,8 +528,12 @@ header {
     line-height: 1.4;
 }
 
-.insights-status {
 
+/* =====================================
+   INSIGHTS STATUS
+===================================== */
+
+.insights-status {
     display: inline-flex;
 
     align-items: center;
@@ -524,7 +550,6 @@ header {
 }
 
 .insights-status::before {
-
     content: "";
 
     width: 6px;
@@ -542,11 +567,209 @@ header {
 
 
 /* =====================================
+   FUTURISTIC INSIGHTS BUTTON
+===================================== */
+
+.insights-button {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 170px;
+
+    height: 46px;
+
+    margin-top: 16px;
+
+    padding:
+        0 24px;
+
+    border:
+        1px solid
+        rgba(0, 224, 255, 0.65);
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07151f,
+            #0b2533
+        );
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 180, 255, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* =====================================
+   BUTTON SHIMMER
+===================================== */
+
+.insights-button::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -2px;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 224, 255, 0.9),
+            rgba(80, 120, 255, 0.9),
+            transparent
+        );
+
+    opacity: 0;
+
+    transform:
+        translateX(-100%);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.7s ease;
+
+    pointer-events: none;
+}
+
+
+/* =====================================
+   BUTTON ARROW
+===================================== */
+
+.insights-button::after {
+    content: "→";
+
+    margin-left: 10px;
+
+    color: #00e0ff;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* =====================================
+   BUTTON HOVER
+===================================== */
+
+.insights-button:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        #00e0ff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #092532,
+            #10394a
+        );
+
+    box-shadow:
+        0 0 0 1px
+        rgba(0, 224, 255, 0.15),
+
+        0 8px 25px
+        rgba(0, 190, 255, 0.20),
+
+        0 0 35px
+        rgba(0, 224, 255, 0.12);
+}
+
+.insights-button:hover::before {
+    opacity: 1;
+
+    transform:
+        translateX(100%);
+}
+
+.insights-button:hover::after {
+    transform:
+        translateX(5px);
+
+    color: #ffffff;
+}
+
+
+/* =====================================
+   BUTTON ACTIVE
+===================================== */
+
+.insights-button:active {
+    transform:
+        translateY(-1px)
+        scale(0.98);
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 224, 255, 0.15);
+}
+
+
+/* =====================================
+   BUTTON KEYBOARD FOCUS
+===================================== */
+
+.insights-button:focus-visible {
+    outline: none;
+
+    border-color:
+        #00e0ff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(0, 224, 255, 0.18),
+
+        0 0 25px
+        rgba(0, 224, 255, 0.25);
+}
+
+
+/* =====================================
    CONTAINERS
 ===================================== */
 
 .container {
-
     width: min(
         90%,
         1180px
@@ -564,13 +787,11 @@ header {
 ===================================== */
 
 .section-title {
-
     margin-bottom: 38px;
 }
 
 .section-title h2,
 .info-section h2 {
-
     margin-bottom: 10px;
 
     color: #dff8f6;
@@ -590,7 +811,6 @@ header {
 }
 
 .section-title h2::before {
-
     content: "";
 
     display: inline-block;
@@ -609,7 +829,6 @@ header {
 }
 
 .section-title p {
-
     color: #70838b;
 
     font-size: 14px;
@@ -621,7 +840,6 @@ header {
 ===================================== */
 
 .grid {
-
     display: grid;
 
     grid-template-columns:
@@ -642,7 +860,6 @@ header {
 ===================================== */
 
 .card {
-
     position: relative;
 
     min-height: 300px;
@@ -679,7 +896,6 @@ header {
 }
 
 .card::before {
-
     content: "";
 
     position: absolute;
@@ -715,7 +931,6 @@ header {
 ===================================== */
 
 .card:not(.in-progress):hover {
-
     transform:
         translateY(-6px);
 
@@ -733,7 +948,6 @@ header {
 ===================================== */
 
 .card-type {
-
     width: fit-content;
 
     margin-bottom: 22px;
@@ -810,7 +1024,6 @@ header {
 ===================================== */
 
 .card h3 {
-
     margin-bottom: 13px;
 
     color: #edf8f8;
@@ -823,7 +1036,6 @@ header {
 }
 
 .card p {
-
     flex-grow: 1;
 
     color: #879aa2;
@@ -839,7 +1051,6 @@ header {
 ===================================== */
 
 .card-footer {
-
     display: flex;
 
     align-items: center;
@@ -858,7 +1069,6 @@ header {
 }
 
 .card-footer span {
-
     color: #688089;
 
     font-size: 12px;
@@ -872,7 +1082,6 @@ header {
 ===================================== */
 
 .resource-status {
-
     color: #5acdbc !important;
 
     font-weight: 600 !important;
@@ -884,7 +1093,6 @@ header {
 ===================================== */
 
 .resource-card.in-progress {
-
     cursor: default;
 
     opacity: 0.82;
@@ -894,7 +1102,6 @@ header {
 }
 
 .resource-card.in-progress:hover {
-
     transform: none;
 
     border-color:
@@ -915,14 +1122,12 @@ header {
 ===================================== */
 
 .info-section {
-
     border-top:
         1px solid
         rgba(255, 255, 255, 0.07);
 }
 
 .info-section h2 {
-
     margin-top: 38px;
 }
 
@@ -931,7 +1136,6 @@ header {
 }
 
 .info-section p {
-
     max-width: 900px;
 
     margin:
@@ -950,7 +1154,6 @@ header {
 ===================================== */
 
 .site-footer {
-
     padding:
         35px 20px;
 
@@ -966,7 +1169,6 @@ header {
 }
 
 .site-footer p + p {
-
     margin-top: 5px;
 
     color: #45565e;
@@ -980,25 +1182,21 @@ header {
 @media (max-width: 900px) {
 
     .navbar {
-
         padding:
             15px 4%;
     }
 
     .container {
-
         width: 92%;
     }
 
     .hero {
-
         padding:
             90px 20px
             70px;
     }
 
     .grid {
-
         gap: 20px;
     }
 
@@ -1012,7 +1210,6 @@ header {
 @media (max-width: 768px) {
 
     .navbar {
-
         flex-direction: column;
 
         gap: 12px;
@@ -1023,13 +1220,11 @@ header {
 
 
     .logo {
-
         font-size: 18px;
     }
 
 
     .logo-mark {
-
         width: 32px;
 
         height: 32px;
@@ -1039,7 +1234,6 @@ header {
 
 
     .nav-links {
-
         width: 100%;
 
         justify-content: center;
@@ -1049,7 +1243,6 @@ header {
 
 
     .nav-links a {
-
         padding:
             7px 10px;
 
@@ -1058,7 +1251,6 @@ header {
 
 
     .hero {
-
         padding:
             65px 18px
             55px;
@@ -1066,7 +1258,6 @@ header {
 
 
     .hero h1 {
-
         font-size:
             clamp(
                 32px,
@@ -1079,7 +1270,6 @@ header {
 
 
     .hero p {
-
         margin-top: 20px;
 
         font-size: 15px;
@@ -1089,13 +1279,11 @@ header {
 
 
     .search-box {
-
         margin-top: 28px;
     }
 
 
     .search-box input {
-
         width: 100%;
 
         height: 50px;
@@ -1105,7 +1293,6 @@ header {
 
 
     .daily-insights {
-
         padding:
             5px 18px
             25px;
@@ -1113,20 +1300,26 @@ header {
 
 
     .insights-card {
-
         padding:
-            19px 17px;
+            21px 17px;
     }
 
 
     .insights-title {
-
         font-size: 15px;
     }
 
 
-    .container {
+    .insights-button {
+        width: 100%;
 
+        min-width: 0;
+
+        height: 48px;
+    }
+
+
+    .container {
         width: 92%;
 
         padding:
@@ -1135,20 +1328,17 @@ header {
 
 
     .section-title {
-
         margin-bottom: 28px;
     }
 
 
     .section-title h2,
     .info-section h2 {
-
         font-size: 27px;
     }
 
 
     .section-title h2::before {
-
         height: 21px;
 
         margin-right: 9px;
@@ -1156,7 +1346,6 @@ header {
 
 
     .grid {
-
         grid-template-columns: 1fr;
 
         gap: 17px;
@@ -1164,7 +1353,6 @@ header {
 
 
     .card {
-
         min-height: 270px;
 
         padding: 23px;
@@ -1174,19 +1362,16 @@ header {
 
 
     .card h3 {
-
         font-size: 20px;
     }
 
 
     .card p {
-
         font-size: 14px;
     }
 
 
     .card-footer {
-
         align-items: flex-start;
 
         flex-direction: column;
@@ -1196,7 +1381,6 @@ header {
 
 
     .info-section p {
-
         font-size: 14px;
 
         line-height: 1.8;
@@ -1204,7 +1388,6 @@ header {
 
 
     .site-footer {
-
         padding:
             28px 18px;
     }
@@ -1219,19 +1402,16 @@ header {
 @media (max-width: 420px) {
 
     .logo {
-
         font-size: 16px;
     }
 
 
     .nav-links {
-
         gap: 0;
     }
 
 
     .nav-links a {
-
         padding:
             6px 8px;
 
@@ -1240,7 +1420,6 @@ header {
 
 
     .hero {
-
         padding:
             52px 16px
             45px;
@@ -1248,7 +1427,6 @@ header {
 
 
     .hero h1 {
-
         font-size: 31px;
 
         line-height: 1.15;
@@ -1256,19 +1434,16 @@ header {
 
 
     .hero p {
-
         font-size: 14px;
     }
 
 
     .container {
-
         width: 90%;
     }
 
 
     .daily-insights {
-
         padding-left: 14px;
 
         padding-right: 14px;
@@ -1276,20 +1451,24 @@ header {
 
 
     .insights-card {
-
         padding:
-            17px 14px;
+            18px 14px;
     }
 
 
     .insights-title {
-
         font-size: 14px;
     }
 
 
-    .card {
+    .insights-button {
+        height: 47px;
 
+        font-size: 13px;
+    }
+
+
+    .card {
         min-height: 250px;
 
         padding: 20px;
@@ -1297,13 +1476,11 @@ header {
 
 
     .card-type {
-
         margin-bottom: 18px;
     }
 
 
     .card h3 {
-
         font-size: 19px;
     }
 
@@ -1323,248 +1500,9 @@ header {
     *,
     *::before,
     *::after {
-
         transition: none !important;
 
         animation: none !important;
-    }
-
-}
-
-
-.insights-card {
-    padding: 20px;
-    border-radius: 12px;
-    background: #fff;
-    border: 1px solid #ddd;
-}
-
-.insights-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.insights-status {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 16px;
-}
-
-.insights-button {
-    display: inline-block;
-    padding: 10px 16px;
-    border-radius: 8px;
-    background: #0066ff;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.2s ease;
-}
-
-.insights-button:hover {
-    background: #0052cc;
-}
-
-
-/* =====================================
-   DAILY INSIGHTS
-   FUTURISTIC BUTTON
-===================================== */
-
-.insights-button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 170px;
-    height: 46px;
-
-    padding: 0 24px;
-
-    margin-top: 16px;
-
-    border: 1px solid rgba(0, 224, 255, 0.65);
-    border-radius: 10px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #07151f,
-            #0b2533
-        );
-
-    color: #ffffff;
-
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-
-    text-decoration: none;
-
-    cursor: pointer;
-
-    overflow: hidden;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease,
-        background 0.25s ease;
-}
-
-
-/* =====================================
-   GLOW EFFECT
-===================================== */
-
-.insights-button::before {
-    content: "";
-
-    position: absolute;
-
-    inset: -2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(0, 224, 255, 0.9),
-            rgba(80, 120, 255, 0.9),
-            transparent
-        );
-
-    opacity: 0;
-
-    transform: translateX(-100%);
-
-    transition:
-        opacity 0.3s ease,
-        transform 0.7s ease;
-
-    pointer-events: none;
-}
-
-
-/* =====================================
-   BUTTON TEXT
-===================================== */
-
-.insights-button {
-    isolation: isolate;
-}
-
-.insights-button {
-    z-index: 1;
-}
-
-
-/* =====================================
-   HOVER
-===================================== */
-
-.insights-button:hover {
-
-    transform: translateY(-3px);
-
-    border-color: #00e0ff;
-
-    background:
-        linear-gradient(
-            135deg,
-            #092532,
-            #10394a
-        );
-
-    box-shadow:
-        0 0 0 1px rgba(0, 224, 255, 0.15),
-        0 8px 25px rgba(0, 190, 255, 0.20),
-        0 0 35px rgba(0, 224, 255, 0.12);
-}
-
-
-.insights-button:hover::before {
-
-    opacity: 1;
-
-    transform: translateX(100%);
-}
-
-
-/* =====================================
-   ACTIVE / CLICK
-===================================== */
-
-.insights-button:active {
-
-    transform: translateY(-1px) scale(0.98);
-
-    box-shadow:
-        0 3px 12px rgba(0, 224, 255, 0.15);
-}
-
-
-/* =====================================
-   KEYBOARD FOCUS
-===================================== */
-
-.insights-button:focus-visible {
-
-    outline: none;
-
-    border-color: #00e0ff;
-
-    box-shadow:
-        0 0 0 3px rgba(0, 224, 255, 0.18),
-        0 0 25px rgba(0, 224, 255, 0.25);
-}
-
-
-/* =====================================
-   FUTURISTIC ARROW
-===================================== */
-
-.insights-button::after {
-
-    content: "→";
-
-    margin-left: 10px;
-
-    color: #00e0ff;
-
-    font-size: 17px;
-    font-weight: 400;
-
-    transition:
-        transform 0.25s ease,
-        color 0.25s ease;
-}
-
-
-.insights-button:hover::after {
-
-    transform: translateX(5px);
-
-    color: #ffffff;
-}
-
-
-/* =====================================
-   MOBILE
-===================================== */
-
-@media (max-width: 600px) {
-
-    .insights-button {
-
-        width: 100%;
-
-        min-width: 0;
-
-        height: 48px;
-
     }
 
 }
